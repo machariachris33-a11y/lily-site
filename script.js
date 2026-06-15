@@ -31,3 +31,9 @@ window.onload = function () {
 function showMessage() {
   document.getElementById("msg").style.display = "block";
 }
+
+function playMusic() {
+  const audio = document.getElementById("bgmusic");
+  audio.volume = 0.4;
+  audio.play();
+}
