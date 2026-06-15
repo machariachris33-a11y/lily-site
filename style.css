@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #fff0f5;
+  background: linear-gradient(#fff0f5, #ffffff);
   padding: 50px;
 }
 
@@ -12,16 +12,23 @@ h1 {
 p {
   font-size: 18px;
   color: #333;
+  max-width: 500px;
+  margin: 10px auto;
 }
 
 button {
   background: #b56576;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 25px;
   cursor: pointer;
   margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 #msg {
@@ -29,4 +36,25 @@ button {
   margin-top: 20px;
   font-size: 16px;
   color: #444;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* soft floating lilies effect */
+body::before {
+  content: "🌸 🌸 🌼 🌸 🌼 🌸";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  opacity: 0.15;
+  animation: float 10s infinite linear;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
 }
