@@ -37,3 +37,20 @@ function playMusic() {
   audio.volume = 0.4;
   audio.play();
 }
+
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+  petal.innerHTML = "🌸";
+
+  petal.style.left = Math.random() * window.innerWidth + "px";
+  petal.style.animationDuration = (3 + Math.random() * 5) + "s";
+
+  document.body.appendChild(petal);
+
+  setTimeout(() => {
+    petal.remove();
+  }, 8000);
+}
+
+setInterval(createPetal, 400);
