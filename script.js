@@ -54,3 +54,19 @@ function createPetal() {
 }
 
 setInterval(createPetal, 400);
+
+function playMusic() {
+  const audio = document.getElementById("bgmusic");
+
+  if (!audio) return;
+
+  audio.volume = 0.4;
+
+  const playPromise = audio.play();
+
+  if (playPromise !== undefined) {
+    playPromise.catch(err => {
+      console.log("Music blocked until user interaction:", err);
+    });
+  }
+}
