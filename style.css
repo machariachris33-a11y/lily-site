@@ -58,3 +58,11 @@ body::before {
   50% { transform: translateY(20px); }
   100% { transform: translateY(0px); }
 }
+
+#typewriter {
+  max-width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+  white-space: pre-line;
+  color: #333;
+}
