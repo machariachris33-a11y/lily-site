@@ -6,7 +6,8 @@ You are beautiful.
 You are strong.
 You are deeply loved.
 
-Take your time today. Breathe.
+Take your time today.
+Breathe.
 You are doing enough already.`;
 
 let i = 0;
